@@ -14,5 +14,6 @@ describe ('Padding-left App', () => {
         expect(paddingLeft('hola', 5, 'x')).toBe('xhola');
         expect(paddingLeft('hola', 7, 'x')).toBe('xxxhola');
         expect(paddingLeft('hola', 6, 'jorge')).toBe('jorgejorgehola');
+        expect(paddingLeft('hola', 6)).toBe('  hola');
     });
 });

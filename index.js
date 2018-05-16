@@ -15,7 +15,12 @@ function paddingLeft(word,numbers,separator) {
     }else{
         let extraSpaces = numbers - word.length;
         while (extraSpaces > 0){
-            word = separator + word;
+            if (separator == null){
+                word = " " + word;
+            }else{
+                word = separator + word;
+            }
+
             extraSpaces--;
         }
         return word;
