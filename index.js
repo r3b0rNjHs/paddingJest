@@ -10,9 +10,9 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 */
 
 function paddingLeft(word,numbers) {
-    if (numbers === 3 || numbers == null){
+    if (numbers < word.length || numbers == null){
         return (word);
     }
-    return null;
+    return "";
 }
 module.exports = paddingLeft;
