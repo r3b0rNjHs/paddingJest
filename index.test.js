@@ -10,12 +10,9 @@ describe ('Padding-left App', () => {
 
     });
 
-    test('should complete the word with spaces before the word if the argument is bigger than the word',function () {
-        expect(paddingLeft('hola',5)).toBe(' hola');
-        expect(paddingLeft('hola',6)).toBe('  hola');
-    });
-
     test('should add separator before the word if the argument is bigger than the word', function(){
         expect(paddingLeft('hola', 5, 'x')).toBe('xhola');
+        expect(paddingLeft('hola', 7, 'x')).toBe('xxxhola');
+        expect(paddingLeft('hola', 6, 'jorge')).toBe('jorgejorgehola');
     });
 });
