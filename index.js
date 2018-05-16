@@ -9,7 +9,7 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 
 */
 
-function paddingLeft() {
-
+function paddingLeft(word) {
+    return (word);
 }
 module.exports = paddingLeft;
