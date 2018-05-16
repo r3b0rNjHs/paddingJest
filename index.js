@@ -10,9 +10,15 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 */
 
 function paddingLeft(word,numbers) {
-    if (numbers < word.length || numbers == null){
+    if (numbers < word.length || numbers == null) {
         return (word);
+    }else{
+        let extraSpaces = numbers - word.length;
+        while (extraSpaces > 0){
+            word = ' ' + word;
+            extraSpaces--;
+        }
+        return word;
     }
-    return "";
 }
 module.exports = paddingLeft;
