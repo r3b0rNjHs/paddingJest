@@ -9,7 +9,7 @@ Si el tamaño final es menor o igual que la cadena inicial, se devuelve sin toca
 
 */
 
-function paddingLeft(word,numbers) {
+function paddingLeft(word,numbers,separator) {
     if (numbers < word.length || numbers == null) {
         return (word);
     }else{

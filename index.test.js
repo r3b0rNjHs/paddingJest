@@ -14,4 +14,8 @@ describe ('Padding-left App', () => {
         expect(paddingLeft('hola',5)).toBe(' hola');
         expect(paddingLeft('hola',6)).toBe('  hola');
     });
+
+    test('should add separator before the word if the argument is bigger than the word', function(){
+        expect(paddingLeft('hola', 5, 'x')).toBe('xhola');
+    });
 });
