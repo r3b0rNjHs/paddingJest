@@ -10,4 +10,8 @@ describe ('Padding-left App', () => {
        expect(paddingLeft('hola',5)).toBe("");
 
     });
+
+    test('should complete the word with spaces before the word if the argument is bigger than the word',function () {
+        expect(paddingLeft('hola',5)).toBe(' hola');
+    });
 });
